@@ -4,7 +4,7 @@ CREATE TABLE orders (
   person_id INTEGER,
   product_name TEXT,
   product_price INTEGER
-)
+);
 
 INSERT INTO orders (order_id, person_id, product_name, product_price)
 VALUES (78334, 2115, 'iMac', 2000);
@@ -17,6 +17,6 @@ SELECT * FROM orders;
 SELECT SUM(product_name) FROM orders;
 SELECT SUM(product_price) FROM orders;
 
-SELECT order_id, order_id = 78334
-FROM orders
+SELECT order_id, order_id = 78334;
+FROM orders;
 GROUP BY order_id;
